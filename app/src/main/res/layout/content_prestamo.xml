@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="16dp"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="6dp"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="45dp"
+            android:visibility="gone"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/ic_person"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_amount_to_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/sand_color"
+            app:cardCornerRadius="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/amount_to_pay_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Monto a pagar"
+                    android:text="@string/amount_to_pay"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/googlesans_bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/amount_to_pay_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="S/ 0.00"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/googlesans_regular" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/type_of_loan_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/googlesans_regular"
+                    android:textSize="13sp"
+                    android:text="Diario (cada dia)"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_dias_por_pagar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:backgroundTint="@color/sand_color"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintStart_toEndOf="@+id/cardview_dias_retrasados_v2"
+            app:layout_constraintTop_toTopOf="@+id/cardview_dias_retrasados_v2">
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_dias_retrasados_v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:layout_marginEnd="6dp"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardview_amount_to_pay"
+            app:layout_constraintEnd_toEndOf="@+id/cardview_amount_to_pay"
+            app:layout_constraintTop_toTopOf="@+id/cardview_amount_to_pay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/lbl_dias_retrasados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/googlesans_regular"
+                    android:padding="3dp"
+                    android:text="días retrasados"
+                    android:textColor="@color/white"
+                    android:textSize="9dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/numero_dias_retrasados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="-0"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cardview_amount_to_pay"
+            app:layout_constraintTop_toBottomOf="@+id/cardview_amount_to_pay">
+
+            <!--Add circular imageview-->
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/img_avatar_circular"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="5dp"
+                tools:text="AH"
+                android:fontFamily="@font/googlesans_bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@drawable/border_mask"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/CircularImageView" />
+
+            <LinearLayout
+                android:id="@+id/container_info_user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/img_avatar_circular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_avatar_circular"
+                app:layout_constraintTop_toTopOf="@+id/img_avatar_circular">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/nombre_completo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:fontFamily="@font/googlesans_bold"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/img_avatar_circular"
+                    app:layout_constraintTop_toTopOf="@+id/img_avatar_circular"
+                    tools:text="Antony Nicolas, Huaman Alikhan" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/lbl_dias_por_pagar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/googlesans_regular"
+                        android:padding="3dp"
+                        android:text="cuotas pagadas"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/numero_dias_por_pagar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/googlesans_bold"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:text="1/180" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Two buttons one to send message and another to share -->
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button_image_background"
+                android:padding="9dp"
+                android:src="@drawable/ic_whatsapp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_share"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Text button to send message -->
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btn_send_message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/googlesans_regular"
+                android:text="Enviar recordatorio"
+                android:textColor="@color/black"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_send_message"
+                app:layout_constraintStart_toStartOf="@+id/btn_send_message"
+                app:layout_constraintTop_toBottomOf="@+id/btn_send_message" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/rounded_button_image_background"
+                android:padding="8dp"
+                android:src="@drawable/ic_sms"
+                android:text="Share"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_send_message"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Text button to share -->
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btn_share_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/googlesans_regular"
+                android:text="Enviar recordario x sms"
+                android:textColor="@color/black"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_share"
+                app:layout_constraintStart_toStartOf="@+id/btn_share"
+                app:layout_constraintTop_toBottomOf="@+id/btn_share" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

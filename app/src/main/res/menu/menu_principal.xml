@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/navigation_finanzas"
+        android:title="Finanzas"
+        android:icon="@drawable/ic_tesoreria"/>
+
+    <item
+        android:id="@+id/navigation_registrar"
+        android:title="Registro"
+        android:icon="@drawable/ic_registrar"/>
+
+    <item
+        android:id="@+id/clients_menu"
+        android:title="Clientes"
+        android:icon="@drawable/ic_group"/>
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:title="Configuración"
+        android:visible="false"
+        android:icon="@drawable/ic_settings"/>
+
+</menu>

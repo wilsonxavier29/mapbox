@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1015169671953",
+    "project_id": "prestamo-1ea3d",
+    "storage_bucket": "prestamo-1ea3d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015169671953:android:1696fe423c1db8a8b862b0",
+        "android_client_info": {
+          "package_name": "com.paparazziapps.pretamistapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvTMVOXaX0f_UPzBYNKm5O7EORAvwTdOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

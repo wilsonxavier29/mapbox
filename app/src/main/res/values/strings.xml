@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Prestify</string>
+    <string name="title_calcular">Calcular</string>
+    <string name="title_register">Registrar</string>
+    <string name="otra_conexion">ó</string>
+
+    <!--Cambiar dependiendo el pais-->
+    <string name="mark_location">Marcar ubicación</string>
+    <string name="tipo_documento">CEDULA</string>
+    <string name="camera_icon">TOMAR FOTO</string>
+    <integer name="cantidad_documento_max">8</integer>
+    <string name="tipo_moneda">$ </string>
+    <string name="type_money_with_amount">$%1$s </string>
+    <string name="tipo_moneda_defecto">$ 1000</string>
+    <string name="tipo_moneda_defecto_cero">$ 0</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoid2lsc29za2kyOSIsImEiOiJjbHFnNzBpczcxNHl0MmxwMXEzcDhhcnZsIn0.jW15TCPa8VCQuO1xcaYRIg</string>
+
+    <string name="documento_vacío">Cedula vacío</string>
+    <string name="documento_incompleto">Cedula incompleto</string>
+    <string name="codigo_pais">593</string>
+
+    <!--App Settings-->
+    <string name="terms_conditions_acepto">Al hacer click en el botón "Continuar" , Aceptas nuestras <b>políticas de privacidad</b> y <b>términos de condición</b>.</string>
+    <string name="app_terms_conditions">Haciendo click en "registrarse", estoy de acuerdo con los Términos y condiciones de <b>%1$s</b>, y su <b>Política de privacidad</b></string>
+    <bool name="isFreeTrail">false</bool>
+
+    <!-- Login Strings-->
+    <string name="doesnt_have_account">¿No tienes una cuenta?</string>
+    <string name="create_account">Registrate aquí</string>
+    <string name="forget_pass">¿Has olvidado como ingresar?</string>
+
+    <!--User inactive-->
+    <string name="inactive_user">Usuario desactivado</string>
+
+
+    <string name="loading">Cargando...</string>
+    <string name="logout">Cerrar Sessión</string>
+    <string name="fragment_register_mode_pay_title">Modo de pago</string>
+    <string name="monto_a_pagar_daily">Monto a pagar \nDiario</string>
+    <string name="monto_a_pagar_daily_with_argument">Monto a pagar \n%1$s</string>
+    <string name="loan_beginning_date_hint">Fecha de inicio de prestamo</string>
+    <string name="amount_to_pay">Monto a pagar</string>
+    <string name="type_loan_example">Diario (cada día)</string>
+    <string name="quotes_paid_title">Cuotas pagadas</string>
+    <string name="days_paid_title">Días pagados</string>
+    <string name="error_icon_description">error image</string>
+    <string name="error_message">Algo salió mal, por favor inténtalo de nuevo</string>
+    <string name="success_icon_description">success icon</string>
+    <string name="default_success_message">Success! Your action was completed.</string>
+    <string name="operation_success_message">Operación realizada con éxito.</string>
+    <string name="loading_dialog_message">Cargando...</string>
+    <string name="accept">Ver recibo</string>
+    <string name="continue_button_message">Continuar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="type_percentage">%1$s%% completado</string>
+    <string name="type_remaining_payments">%1$s de %2$s</string>
+    <string name="type_no_more_payments">No hay más pagos</string>
+    <string name="add_client_message_button">+ Agregar Cliente</string>
+    <string name="save_message_button">Guardar</string>
+    <string name="error_name_empty">El nombre no puede estar vacío</string>
+    <string name="error_email_empty">El correo electrónico no puede estar vacío</string>
+    <string name="error_last_name_empty">El apellido no puede estar vacío</string>
+    <string name="error_document_empty">El documento no puede estar vacío</string>
+    <string name="error_phone_empty">El celular no puede estar vacío</string>
+    <string name="error_email_invalid">El correo electrónico no es válido</string>
+
+
+</resources>
